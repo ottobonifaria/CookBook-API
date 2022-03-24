@@ -5,12 +5,13 @@ import lombok.*;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "ingrediente", schema = "cookbook")
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
+@EqualsAndHashCode()
 
 public class Ingrediente {
     @Id
